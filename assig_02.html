@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function create_multiplier(multiplier){
+
+            return function ( ){
+
+                const number = parseFloat(prompt("Enter a number to multiply: "))
+                if (isNaN(number)){
+                    return "please enter valid number"
+                }
+               else
+                return number*multiplier
+            }
+        }
+
+        const Double = create_multiplier(2);
+        const Triple = create_multiplier(3);
+
+        console.log("Result of doubling:", Double());
+
+        console.log("Result of tripling:", Triple());
+
+
+    </script>
+</body>
+</html>

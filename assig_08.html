@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1> calculations</h1>
+    <h2 id="demo"> </h2>
+    <script type="module">
+       import { add, subtract , multiply , divide } from "./mathoperation.js";
+
+        const num1 = parseInt(prompt("Enter 1st number"));
+        const num2 = parseInt(prompt("Enter 2nd number"));
+
+        document.getElementById("demo").innerHTML += 
+        `Add: ${num1} + ${num2} = ${add(num1, num2)}<br>
+        Subtract: ${num1} - ${num2} = ${subtract(num1, num2)}<br>
+        Multiply: ${num1} * ${num2} = ${multiply(num1, num2)}<br>
+        Divide: ${num1} / ${num2} = ${divide(num1, num2)}<br>`;
+
+    </script>
+</body>
+
+</html>

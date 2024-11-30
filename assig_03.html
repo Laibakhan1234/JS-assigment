@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function personinfo({name , age , country = "Pakistan", city = "Karachi"}){
+            
+            return `Name: ${name}, Age: ${age}, Country: ${country}, City: ${city}`;
+        }
+
+
+        person1 = { name : " Laiba" , age: "21"}
+        person2 = { name: "shahbaz" , age : "28" , country : "Turkey" , city: "istambul"}
+        
+        console.log(personinfo(person1));
+        console.log(personinfo(person2));
+       
+        
+
+    </script>
+</body>
+</html>

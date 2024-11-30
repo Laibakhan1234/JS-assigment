@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const books = [
+
+        {title: "The turning point" , author: "Anjum Naz" , yearpublish: "2019"},
+        {title: "Observation And understanding" , author: "Laiba Khan" , yearpublish: "2021"},
+        {title: "Satisfication in Life" , author: "Shahbaz mehmood" , yearpublish: "2022"},
+        {title: "Happy Life" , author: "Laihbaz" , yearpublish: "2024"}
+        ]
+
+        function loginfo(book){
+            for(book of books){
+                console.log(`Title: ${book.title} , Author: ${book.author} , Year of Publish: ${book.yearpublish}`);
+                
+            }
+        }
+
+        loginfo(books)
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"></h1>
+    <script>
+        function checker(num){
+            return num % 2 === 0? "Even " : "Odd";
+        }
+
+        const userinput = parseInt(prompt("Enter the number to check even or odd"),10)
+       let result = checker(userinput);
+       console.log(`The number ${userinput} is ${result}.`);
+        document.getElementById("demo").innerHTML = ` The number you enterd ${userinput} is ${result}`
+
+    </script>
+</body>
+</html>

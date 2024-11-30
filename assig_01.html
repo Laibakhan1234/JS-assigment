@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        function scoping() {
+    if (true) {
+        var laiba = "I am laiba";
+        let shahbaz = "I am laiba's husband";
+        const fatima = "I am laiba's daughter";
+    }
+
+    // Check variable accessibility
+    var varaccess = laiba ? "Var is accessible" : "Var is not accessible";
+    var letaccess = typeof shahbaz !== "undefined" 
+        ? "Let is accessible" 
+        : "Let is not accessible here because of block scope";
+    var constaccess = typeof fatima !== "undefined" 
+        ? "Const is accessible" 
+        : "Const is not accessible here because of block scope";
+
+    // Log the results
+    console.log(`
+    ${varaccess},
+    ${letaccess},
+    ${constaccess}`);
+}
+
+scoping();
+
+
+
+    </script>
+</body>
+</html>

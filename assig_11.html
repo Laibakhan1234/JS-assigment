@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+     function addition(a,b){
+        return a+b;
+    
+     }
+
+     function subtraction(a , b){
+        return a -b ;
+     }
+
+     function operation( num1, num2 , callback){
+        return callback(num1 , num2)
+     }
+
+     let add = operation(3 , 5 ,addition);
+     let sub = operation(7,6 , subtraction)
+
+     console.log(add  , sub);
+     
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"> </h1>
+    <script>
+        const user = {
+            name : " Shahbaz",
+            address: {
+                city: "Karachi",
+                
+            }
+        }
+
+        function logcity(userobject){
+            let cityname = userobject?.address?.city;
+          let message  = cityname? ` city : ${cityname}`: "city not found";
+          document.getElementById("demo").innerHTML += `${message}<br>`
+            
+        }
+
+       
+        logcity(user)
+
+        let withoutaddress = {name: " Laiba"}
+        logcity(withoutaddress);
+
+        let withoutcity = { name: "Shahbaz", address: {}}
+        
+        logcity(withoutcity)
+
+
+    </script>
+</body>
+</html>

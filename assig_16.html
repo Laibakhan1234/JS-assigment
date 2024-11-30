@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <h1 id="display"> </h1>
+    <h2 id="demo"> </h2>
+    <script>
+
+        function exponentiation (base , exponent) {
+            return base ** exponent
+
+        };
+
+        let Base = prompt("Enter the base: ");
+        let Expo = prompt("Enter the exponent: ");
+
+        let result = exponentiation(Base , Expo);
+        console.log(result);
+        let display =`The result of ${Base} to the power ${Expo} is :  `;
+        document.getElementById("display").innerHTML = display
+        document.getElementById("demo").innerHTML = result
+        
+    </script>
+</body>
+</html>

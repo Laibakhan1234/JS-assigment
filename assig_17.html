@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal{
+            constructor(name , specie){
+                this.name = name;
+                this.specie = specie;
+            }
+        
+
+        speak(sound){
+            console.log(`${this.specie} named ${this.name} says "${sound}!`);
+            
+        }
+    }
+
+        let Dog = new Animal("buddy" , "Dog");
+        let Cat = new Animal("whiskers" , "Cat")
+
+        Dog.speak("woof")
+        Cat.speak("Mewo")
+        
+    </script>
+</body>
+</html>

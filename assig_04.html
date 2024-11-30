@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        function calculatetotal(originalprice , ...discounts){
+
+            const finalprice = discounts.reduce((currentprice , discount) => currentprice - discount, originalprice)
+            return finalprice;
+
+        }
+
+       
+
+       console.log(calculatetotal(200,20,5) );
+       console.log(calculatetotal(150,20,5 , 7 , 8) );
+       console.log(calculatetotal(400,20,5 , 10 ,6) );
+        
+    </script>
+</body>
+</html>
